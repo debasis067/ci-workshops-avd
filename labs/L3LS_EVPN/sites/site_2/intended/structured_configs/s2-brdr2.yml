@@ -86,6 +86,15 @@ local_users:
   sha512_password: $6$arista$E92TQtSQvp4BJXj93ziv2gr.sX1MDERopNAWmvYXzlcOdQL48BR2O4V4CDDME5wZdNOEz0YfpOmOSyr0TsnxL/
   ssh_key: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC/UklJAcytmTrW8zv1i1+3g91GswjTNwikJiecPQ9j5hMndnWyT5ZjR9eXlK8TWemWFuF0gcyg1UI6jjPc9+HLrWo1wTlw1M+lWl6yHMVfyS/xPXhkjDt3ym4nkSjbdyaY2jVvY/Pr4UuSWh2mDVPKk5zo9iUPGJD+7sSUxy5tDoYqoYVad9uJaCFyndhB6c1kaMrSHKFFrl3EknGgPcKInFd1eETqn629dqCG2FXQvXmKtwSCJ7Z9Q1RdRrOA4yIBYl+ebZHcFJSkTdwlmULC5EJvmMguk2XnxJE+0+8r0OpnFQ9FJ3WnztgKSfivAxmce7XH9VF295veulicq375
     arista@index-exchange-train2-2-216bda19-eos
+logging:
+  vrfs:
+  - name: default
+    source_interface: Management0
+    hosts:
+    - name: 10.200.0.108
+      protocol: udp
+    - name: 10.200.1.108
+      protocol: udp
 loopback_interfaces:
 - name: Loopback0
   description: ROUTER_ID
